@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class BaseForm extends JFrame {
-    public BaseForm (int widht, int height){
+
+public BaseForm (int widht, int height){
         setTitle("Podgotovka");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setMinimumSize(new Dimension(widht, height));

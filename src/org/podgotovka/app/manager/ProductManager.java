@@ -23,6 +23,7 @@ public class ProductManager {
             pr.setInt(8, product.getMinCostForAgent());
 
             pr.executeUpdate();
+
             ResultSet keys = pr.getGeneratedKeys();
             if (keys.next()){
                 product.setId(keys.getInt(1));
@@ -84,7 +85,7 @@ public class ProductManager {
             List<Product> list = new ArrayList<>();
 
             while(resultSet.next()){
-                list.add(new Product(resultSet.getInt(1),
+                list.add( new Product(resultSet.getInt(1),
                         resultSet.getString(2),
                         resultSet.getString(3),
                         resultSet.getInt(4),

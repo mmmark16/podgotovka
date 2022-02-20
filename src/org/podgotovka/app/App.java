@@ -39,7 +39,8 @@ public class App {
 
 
 
-
+        git config --global user.name "Pa4ok"
+        git config --global user.email "pa4ok228@mail.ru"
         git init
         git remote add origin всатвить ссылку из гокса
         git add -A

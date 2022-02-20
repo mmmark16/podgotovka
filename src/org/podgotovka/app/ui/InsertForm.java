@@ -35,6 +35,7 @@ public class InsertForm extends BaseForm {
     }
 
     private void initfield() {
+
         idspinner.setText(String.valueOf(product.getId()));
         titlefield.setText(product.getTitle());
         ProductTypeField.setText(product.getProductType());
